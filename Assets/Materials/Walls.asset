@@ -1,0 +1,3335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a6b9796d1c0440eba061ace5e9dff6, type: 3}
+  m_Name: Walls
+  m_EditorClassIdentifier: 
+  assetsData:
+  - rid: 6416760143111258619
+  - rid: 6416760143111258625
+  - rid: 6416760143111258631
+  - rid: 6416760143111258637
+  - rid: 6416760143111258643
+  - rid: 6416760143111258649
+  - rid: 6416760143111258655
+  - rid: 6416760143111258661
+  - rid: 6416760143111258667
+  - rid: 6416760143111258673
+  - rid: 6416760143111258679
+  - rid: 6416760143111258685
+  - rid: 6416760143111258691
+  - rid: 6416760143111258697
+  - rid: 6416760143111258703
+  - rid: 6416760143111258709
+  - rid: 6416760143111258715
+  - rid: 6416760143111258721
+  - rid: 6416760143111258727
+  - rid: 6416760143111258733
+  - rid: 6416760143111258739
+  - rid: 6416760143111258745
+  - rid: 6416760143111258751
+  - rid: 6416760143111258757
+  - rid: 6416760143111258763
+  - rid: 6416760143111258769
+  - rid: 6416760143111258775
+  - rid: 6416760143111258781
+  - rid: 6416760143111258787
+  - rid: 6416760143111258793
+  - rid: 6416760143111258799
+  - rid: 6416760143111258805
+  - rid: 6416760143111258811
+  - rid: 6416760143111258817
+  - rid: 6416760143111258823
+  - rid: 6416760143111258829
+  - rid: 6416760143111258835
+  - rid: 6416760143111258841
+  - rid: 6416760143111258847
+  - rid: 6416760143111258853
+  currentMode: TextToImage
+  m_Data:
+  - rid: 6416760143111258610
+  - rid: 6416760143111258611
+  - rid: 6416760143111258612
+  - rid: 6416760143111258618
+  preRefinedArtifact:
+    rid: 6416760143111258853
+  refinedArtifact:
+    rid: 6416760143111258853
+  selectedArtifact:
+    rid: 6416760143111258863
+  m_Operators:
+  - rid: 6416760143111258613
+  - rid: 6416760143111258859
+  - rid: 6416760143111258860
+  - rid: 6416760143111258861
+  - rid: 6416760143111258862
+  m_PreRefineOperators:
+  - rid: 6416760143111258613
+  - rid: 6416760143111258614
+  - rid: 6416760143111258615
+  - rid: 6416760143111258616
+  - rid: 6416760143111258617
+  references:
+    version: 2
+    RefIds:
+    - rid: 6416760143111258610
+      type: {class: FeedbackManager, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_Liked:
+          m_Values: []
+        m_Disliked:
+          m_Values: []
+    - rid: 6416760143111258611
+      type: {class: MainUI/UISize, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_NodeListWidth: 300
+        m_NodeListRefineWidth: 300
+        m_AssetListRefineWidth: 200
+    - rid: 6416760143111258612
+      type: {class: GenerateButtonData, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data: 
+    - rid: 6416760143111258613
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258614
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint, dark
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258615
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258616
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258617
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258618
+      type: {class: BookmarkManager, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_BookmarkedArtifacts:
+          m_Values: []
+        m_IsFilterEnabled: 0
+    - rid: 6416760143111258619
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: b98ca221-11d5-4c30-8d07-0a910b1f7ac3
+        Seed: 3104934590
+        m_Operators:
+        - rid: 6416760143111258620
+        - rid: 6416760143111258621
+        - rid: 6416760143111258622
+        - rid: 6416760143111258623
+        - rid: 6416760143111258624
+        history:
+        - rid: 6416760143111258619
+        IsPbrMode: 0
+    - rid: 6416760143111258620
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258621
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirt walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258622
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258623
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258624
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258625
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: e59b032e-a57a-4bfd-9909-4c23e8904476
+        Seed: 1162589996
+        m_Operators:
+        - rid: 6416760143111258626
+        - rid: 6416760143111258627
+        - rid: 6416760143111258628
+        - rid: 6416760143111258629
+        - rid: 6416760143111258630
+        history:
+        - rid: 6416760143111258625
+        IsPbrMode: 0
+    - rid: 6416760143111258626
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258627
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirt walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258628
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258629
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258630
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258631
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: e3a50c17-a24b-42c3-911b-5e96989d0b46
+        Seed: 1801460446
+        m_Operators:
+        - rid: 6416760143111258632
+        - rid: 6416760143111258633
+        - rid: 6416760143111258634
+        - rid: 6416760143111258635
+        - rid: 6416760143111258636
+        history:
+        - rid: 6416760143111258631
+        IsPbrMode: 0
+    - rid: 6416760143111258632
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258633
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirt walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258634
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258635
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258636
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258637
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 484bc841-d7b0-4270-b103-f4a712725602
+        Seed: 4056045449
+        m_Operators:
+        - rid: 6416760143111258638
+        - rid: 6416760143111258639
+        - rid: 6416760143111258640
+        - rid: 6416760143111258641
+        - rid: 6416760143111258642
+        history:
+        - rid: 6416760143111258637
+        IsPbrMode: 0
+    - rid: 6416760143111258638
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258639
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirt walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258640
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258641
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258642
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258643
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 10007e66-c224-4b12-bd8d-f070f7155c15
+        Seed: 2863995991
+        m_Operators:
+        - rid: 6416760143111258644
+        - rid: 6416760143111258645
+        - rid: 6416760143111258646
+        - rid: 6416760143111258647
+        - rid: 6416760143111258648
+        history:
+        - rid: 6416760143111258643
+        IsPbrMode: 0
+    - rid: 6416760143111258644
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258645
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirty walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258646
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258647
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258648
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258649
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 2ea9c58c-683d-4bf9-9863-9b250650aa6b
+        Seed: 1922958581
+        m_Operators:
+        - rid: 6416760143111258650
+        - rid: 6416760143111258651
+        - rid: 6416760143111258652
+        - rid: 6416760143111258653
+        - rid: 6416760143111258654
+        history:
+        - rid: 6416760143111258649
+        IsPbrMode: 0
+    - rid: 6416760143111258650
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258651
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirty walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258652
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258653
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258654
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258655
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: b0befa78-54e8-442e-a1a0-0246ddd34892
+        Seed: 1651535185
+        m_Operators:
+        - rid: 6416760143111258656
+        - rid: 6416760143111258657
+        - rid: 6416760143111258658
+        - rid: 6416760143111258659
+        - rid: 6416760143111258660
+        history:
+        - rid: 6416760143111258655
+        IsPbrMode: 0
+    - rid: 6416760143111258656
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258657
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirty walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258658
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258659
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258660
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258661
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 4fccaa2e-105b-47bb-873c-525066986053
+        Seed: 3795398285
+        m_Operators:
+        - rid: 6416760143111258662
+        - rid: 6416760143111258663
+        - rid: 6416760143111258664
+        - rid: 6416760143111258665
+        - rid: 6416760143111258666
+        history:
+        - rid: 6416760143111258661
+        IsPbrMode: 0
+    - rid: 6416760143111258662
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258663
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - blood and dirty walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258664
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258665
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258666
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258667
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 04607cbb-cd3b-444b-9938-56deff52319e
+        Seed: 1296542434
+        m_Operators:
+        - rid: 6416760143111258668
+        - rid: 6416760143111258669
+        - rid: 6416760143111258670
+        - rid: 6416760143111258671
+        - rid: 6416760143111258672
+        history:
+        - rid: 6416760143111258667
+        IsPbrMode: 0
+    - rid: 6416760143111258668
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258669
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258670
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258671
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258672
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258673
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 1bbe1980-c1a4-433f-9c01-edc43d9358f6
+        Seed: 470754668
+        m_Operators:
+        - rid: 6416760143111258674
+        - rid: 6416760143111258675
+        - rid: 6416760143111258676
+        - rid: 6416760143111258677
+        - rid: 6416760143111258678
+        history:
+        - rid: 6416760143111258673
+        IsPbrMode: 0
+    - rid: 6416760143111258674
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258675
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258676
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258677
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258678
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258679
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 3df6cf31-a3a5-4f26-85eb-086a786985f3
+        Seed: 3778330847
+        m_Operators:
+        - rid: 6416760143111258680
+        - rid: 6416760143111258681
+        - rid: 6416760143111258682
+        - rid: 6416760143111258683
+        - rid: 6416760143111258684
+        history:
+        - rid: 6416760143111258679
+        IsPbrMode: 0
+    - rid: 6416760143111258680
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258681
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258682
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258683
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258684
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258685
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 7d0b5143-f2c4-4fb0-8195-70b6977458aa
+        Seed: 1459185345
+        m_Operators:
+        - rid: 6416760143111258686
+        - rid: 6416760143111258687
+        - rid: 6416760143111258688
+        - rid: 6416760143111258689
+        - rid: 6416760143111258690
+        history:
+        - rid: 6416760143111258685
+        IsPbrMode: 0
+    - rid: 6416760143111258686
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258687
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258688
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258689
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258690
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258691
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 7404e9d9-11bd-485a-baf8-dff15282ef5b
+        Seed: 2207021463
+        m_Operators:
+        - rid: 6416760143111258692
+        - rid: 6416760143111258693
+        - rid: 6416760143111258694
+        - rid: 6416760143111258695
+        - rid: 6416760143111258696
+        history:
+        - rid: 6416760143111258691
+        IsPbrMode: 0
+    - rid: 6416760143111258692
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258693
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258694
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258695
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258696
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258697
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: a6566e61-08e7-4976-9b4a-f86faade0879
+        Seed: 3909371267
+        m_Operators:
+        - rid: 6416760143111258698
+        - rid: 6416760143111258699
+        - rid: 6416760143111258700
+        - rid: 6416760143111258701
+        - rid: 6416760143111258702
+        history:
+        - rid: 6416760143111258697
+        IsPbrMode: 0
+    - rid: 6416760143111258698
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258699
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258700
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258701
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258702
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258703
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: ec9c2ebc-7b14-481a-82c3-0652ec150d04
+        Seed: 626160224
+        m_Operators:
+        - rid: 6416760143111258704
+        - rid: 6416760143111258705
+        - rid: 6416760143111258706
+        - rid: 6416760143111258707
+        - rid: 6416760143111258708
+        history:
+        - rid: 6416760143111258703
+        IsPbrMode: 0
+    - rid: 6416760143111258704
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258705
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258706
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258707
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258708
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258709
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 3f5f6fb4-155e-46f9-bb45-148096a1153b
+        Seed: 1298256155
+        m_Operators:
+        - rid: 6416760143111258710
+        - rid: 6416760143111258711
+        - rid: 6416760143111258712
+        - rid: 6416760143111258713
+        - rid: 6416760143111258714
+        history:
+        - rid: 6416760143111258709
+        IsPbrMode: 0
+    - rid: 6416760143111258710
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258711
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old cracked walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258712
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258713
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258714
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258715
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: cb161fb3-5a77-4f0b-94e1-bf941f45e610
+        Seed: 627885430
+        m_Operators:
+        - rid: 6416760143111258716
+        - rid: 6416760143111258717
+        - rid: 6416760143111258718
+        - rid: 6416760143111258719
+        - rid: 6416760143111258720
+        history:
+        - rid: 6416760143111258715
+        IsPbrMode: 0
+    - rid: 6416760143111258716
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258717
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old  walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258718
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258719
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258720
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258721
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: b1608e38-4821-4428-a0e6-2535c52cf7ea
+        Seed: 2793468554
+        m_Operators:
+        - rid: 6416760143111258722
+        - rid: 6416760143111258723
+        - rid: 6416760143111258724
+        - rid: 6416760143111258725
+        - rid: 6416760143111258726
+        history:
+        - rid: 6416760143111258721
+        IsPbrMode: 0
+    - rid: 6416760143111258722
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258723
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old  walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258724
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258725
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258726
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258727
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: e2f9a922-3d6e-45b5-9253-cc21dac54a57
+        Seed: 3665615184
+        m_Operators:
+        - rid: 6416760143111258728
+        - rid: 6416760143111258729
+        - rid: 6416760143111258730
+        - rid: 6416760143111258731
+        - rid: 6416760143111258732
+        history:
+        - rid: 6416760143111258727
+        IsPbrMode: 0
+    - rid: 6416760143111258728
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258729
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old  walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258730
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258731
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258732
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258733
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 4e4f6b3c-7aca-4273-b968-c81fc79e8517
+        Seed: 2658708075
+        m_Operators:
+        - rid: 6416760143111258734
+        - rid: 6416760143111258735
+        - rid: 6416760143111258736
+        - rid: 6416760143111258737
+        - rid: 6416760143111258738
+        history:
+        - rid: 6416760143111258733
+        IsPbrMode: 0
+    - rid: 6416760143111258734
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258735
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old  walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258736
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258737
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258738
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258739
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 1b4cd85c-91d2-4d01-ba64-c633c9ac0ef0
+        Seed: 1597672741
+        m_Operators:
+        - rid: 6416760143111258740
+        - rid: 6416760143111258741
+        - rid: 6416760143111258742
+        - rid: 6416760143111258743
+        - rid: 6416760143111258744
+        history:
+        - rid: 6416760143111258739
+        IsPbrMode: 0
+    - rid: 6416760143111258740
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258741
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258742
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258743
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258744
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258745
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 311516be-668b-4a88-9bc4-5bf7bbb81003
+        Seed: 389164644
+        m_Operators:
+        - rid: 6416760143111258746
+        - rid: 6416760143111258747
+        - rid: 6416760143111258748
+        - rid: 6416760143111258749
+        - rid: 6416760143111258750
+        history:
+        - rid: 6416760143111258745
+        IsPbrMode: 0
+    - rid: 6416760143111258746
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258747
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258748
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258749
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258750
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258751
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 368f3bdc-aac6-4d5a-85c2-ac2f683feab0
+        Seed: 137229667
+        m_Operators:
+        - rid: 6416760143111258752
+        - rid: 6416760143111258753
+        - rid: 6416760143111258754
+        - rid: 6416760143111258755
+        - rid: 6416760143111258756
+        history:
+        - rid: 6416760143111258751
+        IsPbrMode: 0
+    - rid: 6416760143111258752
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258753
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258754
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258755
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258756
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258757
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 15ecad10-a507-4b39-8668-3809f5dca0d0
+        Seed: 1393976440
+        m_Operators:
+        - rid: 6416760143111258758
+        - rid: 6416760143111258759
+        - rid: 6416760143111258760
+        - rid: 6416760143111258761
+        - rid: 6416760143111258762
+        history:
+        - rid: 6416760143111258757
+        IsPbrMode: 0
+    - rid: 6416760143111258758
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258759
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258760
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258761
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258762
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258763
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: d19223c7-8833-4e30-a295-3370e6d05894
+        Seed: 531350920
+        m_Operators:
+        - rid: 6416760143111258764
+        - rid: 6416760143111258765
+        - rid: 6416760143111258766
+        - rid: 6416760143111258767
+        - rid: 6416760143111258768
+        history:
+        - rid: 6416760143111258763
+        IsPbrMode: 0
+    - rid: 6416760143111258764
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258765
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258766
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258767
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258768
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258769
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 0c90a650-e209-489f-921d-389efa14a43c
+        Seed: 784056345
+        m_Operators:
+        - rid: 6416760143111258770
+        - rid: 6416760143111258771
+        - rid: 6416760143111258772
+        - rid: 6416760143111258773
+        - rid: 6416760143111258774
+        history:
+        - rid: 6416760143111258769
+        IsPbrMode: 0
+    - rid: 6416760143111258770
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258771
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258772
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258773
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258774
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258775
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: d2266bd4-51ea-47e4-bf41-df7e057b4481
+        Seed: 2984306380
+        m_Operators:
+        - rid: 6416760143111258776
+        - rid: 6416760143111258777
+        - rid: 6416760143111258778
+        - rid: 6416760143111258779
+        - rid: 6416760143111258780
+        history:
+        - rid: 6416760143111258775
+        IsPbrMode: 0
+    - rid: 6416760143111258776
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258777
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258778
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258779
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258780
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258781
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: c2b86050-3daf-4c59-a38c-e05c6a56ed38
+        Seed: 4065279692
+        m_Operators:
+        - rid: 6416760143111258782
+        - rid: 6416760143111258783
+        - rid: 6416760143111258784
+        - rid: 6416760143111258785
+        - rid: 6416760143111258786
+        history:
+        - rid: 6416760143111258781
+        IsPbrMode: 0
+    - rid: 6416760143111258782
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258783
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258784
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258785
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258786
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258787
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 340373e7-029d-4048-9b64-e3c0bc4ef242
+        Seed: 1868371229
+        m_Operators:
+        - rid: 6416760143111258788
+        - rid: 6416760143111258789
+        - rid: 6416760143111258790
+        - rid: 6416760143111258791
+        - rid: 6416760143111258792
+        history:
+        - rid: 6416760143111258787
+        IsPbrMode: 0
+    - rid: 6416760143111258788
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258789
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old painted walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258790
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258791
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258792
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258793
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 9181d70d-7992-409b-b194-245b53a32d53
+        Seed: 367525394
+        m_Operators:
+        - rid: 6416760143111258794
+        - rid: 6416760143111258795
+        - rid: 6416760143111258796
+        - rid: 6416760143111258797
+        - rid: 6416760143111258798
+        history:
+        - rid: 6416760143111258793
+        IsPbrMode: 0
+    - rid: 6416760143111258794
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258795
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old painted walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258796
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258797
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258798
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258799
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 0746dda8-fd2a-4d53-8a4d-704f09a7fd22
+        Seed: 2411737466
+        m_Operators:
+        - rid: 6416760143111258800
+        - rid: 6416760143111258801
+        - rid: 6416760143111258802
+        - rid: 6416760143111258803
+        - rid: 6416760143111258804
+        history:
+        - rid: 6416760143111258799
+        IsPbrMode: 0
+    - rid: 6416760143111258800
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258801
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old painted walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258802
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258803
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258804
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258805
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 24193128-a238-45e8-bad3-5fc5c8a28109
+        Seed: 1281927400
+        m_Operators:
+        - rid: 6416760143111258806
+        - rid: 6416760143111258807
+        - rid: 6416760143111258808
+        - rid: 6416760143111258809
+        - rid: 6416760143111258810
+        history:
+        - rid: 6416760143111258805
+        IsPbrMode: 0
+    - rid: 6416760143111258806
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258807
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old painted walls
+          - stone
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258808
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258809
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258810
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258811
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: c039b5e0-4587-4038-9eb2-0643875d45c2
+        Seed: 123493332
+        m_Operators:
+        - rid: 6416760143111258812
+        - rid: 6416760143111258813
+        - rid: 6416760143111258814
+        - rid: 6416760143111258815
+        - rid: 6416760143111258816
+        history:
+        - rid: 6416760143111258811
+        IsPbrMode: 0
+    - rid: 6416760143111258812
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258813
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258814
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258815
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258816
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258817
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: d8817f9c-4d50-475f-bbc4-b78f2e560254
+        Seed: 585775330
+        m_Operators:
+        - rid: 6416760143111258818
+        - rid: 6416760143111258819
+        - rid: 6416760143111258820
+        - rid: 6416760143111258821
+        - rid: 6416760143111258822
+        history:
+        - rid: 6416760143111258817
+        IsPbrMode: 0
+    - rid: 6416760143111258818
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258819
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258820
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258821
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258822
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258823
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: a1730003-ceac-4901-9247-40e4a97938ca
+        Seed: 3241801346
+        m_Operators:
+        - rid: 6416760143111258824
+        - rid: 6416760143111258825
+        - rid: 6416760143111258826
+        - rid: 6416760143111258827
+        - rid: 6416760143111258828
+        history:
+        - rid: 6416760143111258823
+        IsPbrMode: 0
+    - rid: 6416760143111258824
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258825
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258826
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258827
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258828
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258829
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 85304f1f-317b-494d-b344-1978a24c3ab1
+        Seed: 3168577886
+        m_Operators:
+        - rid: 6416760143111258830
+        - rid: 6416760143111258831
+        - rid: 6416760143111258832
+        - rid: 6416760143111258833
+        - rid: 6416760143111258834
+        history:
+        - rid: 6416760143111258829
+        IsPbrMode: 0
+    - rid: 6416760143111258830
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258831
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258832
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258833
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258834
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258835
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: e6b84b1e-77cb-4799-9fde-66878da13e2d
+        Seed: 2146082147
+        m_Operators:
+        - rid: 6416760143111258836
+        - rid: 6416760143111258837
+        - rid: 6416760143111258838
+        - rid: 6416760143111258839
+        - rid: 6416760143111258840
+        history:
+        - rid: 6416760143111258835
+        IsPbrMode: 0
+    - rid: 6416760143111258836
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258837
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint, dark
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258838
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258839
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258840
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258841
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 05d114f9-5747-42e7-9f00-b4116d23a839
+        Seed: 1470558889
+        m_Operators:
+        - rid: 6416760143111258842
+        - rid: 6416760143111258843
+        - rid: 6416760143111258844
+        - rid: 6416760143111258845
+        - rid: 6416760143111258846
+        history:
+        - rid: 6416760143111258841
+        IsPbrMode: 0
+    - rid: 6416760143111258842
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258843
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint, dark
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258844
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258845
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258846
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258847
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 06e79f86-7b42-4178-abf0-d25cd5d34195
+        Seed: 1900305506
+        m_Operators:
+        - rid: 6416760143111258848
+        - rid: 6416760143111258849
+        - rid: 6416760143111258850
+        - rid: 6416760143111258851
+        - rid: 6416760143111258852
+        history:
+        - rid: 6416760143111258847
+        IsPbrMode: 0
+    - rid: 6416760143111258848
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258849
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint, dark
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258850
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258851
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258852
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258853
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 8f511cc2-5add-478a-8eeb-f3b67f61da74
+        Seed: 3088796983
+        m_Operators:
+        - rid: 6416760143111258854
+        - rid: 6416760143111258855
+        - rid: 6416760143111258856
+        - rid: 6416760143111258857
+        - rid: 6416760143111258858
+        history:
+        - rid: 6416760143111258853
+        - rid: 6416760143111258863
+        - rid: 6416760143111258869
+        - rid: 6416760143111258875
+        - rid: 6416760143111258881
+        IsPbrMode: 0
+    - rid: 6416760143111258854
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258855
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - old paint, dark
+          - stone, wood
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258856
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258857
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258858
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258859
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - crack
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258860
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258861
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258862
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAaRklEQVR4Ae3d63LjyA0GUDu17//KGysp1XgkUeKlLwD6+I9nZIoNHNDbH2lP8vXlgwABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIrCXwvVa7/bv99+djzyrfPx97jnMMAQIECBDoIWATaqC6d9PfWkoY2JLxOgECBAj0EhAALshe3fgflxYEHkX8nQABAgR6CQgAJ2Vbb/6/yxAEfmv4MwECBAj0EBAADqr23Ph/lyIE/NbwZwIECBBoLSAAHBAdtfnfSxIC7hI+EyBAgEBrAQFgp+jozf9elhBwl/CZAAECBFoKCAA7NGdt/vfShIC7hM8ECBAg0EpAANghOTsAvCpRKHil4jUCBAgQ2CsgAHyQirj5vypZIHil4jUCBAgQ2BIQALZkfl7Psvk/tiAMPIr4OwECBAg8CqQMAEc35rMb4tF1HnFn/v1szzNrtjYBAgQIjBNIFQCubshHNsWra40b4fuVjvT8/ky+SoAAAQKVBFIEgNab8Z5NsfWasy+aPT3PrtH6BAgQIDBOIHQA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O5QnAXeJ65+FquuGzkCAAIEVBKY+AVgBeGSPNv+R2tYiQIBAboEQTwBuhJ4CXLuQbP7X/LybAAECqwl4AlBg4jb/AkPUAgECBAYLCACDwVsvZ/NvLep8BAgQWENAAEg8Z5t/4uEpnQABApMFwvwOwM3B7wHsvxps/vutHEmAAAECzwKeADybhH/F5h9+RAokQIBAeAEBIPyI/i7Q5v+3h78RIECAwDmBUD8CuLXgxwDbg7T5b9v4CgECBAgcE/AE4JjXtKNt/tPoLUyAAIGSAgJAgrHa/BMMSYkECBBIJiAABB+YzT/4gJRHgACBpALhfgfg5uj3AP5/Ndn8k35XKZsAAQIJBDwBCDokm3/QwSiLAAECRQRCPgG42a78FMDmX+S7SxsECBAILOAJQLDh2PyDDUQ5BAgQKCoQ9gnAzXu1pwA2/6LfZdoiQIBAQAFPAIIMxeYfZBDKIECAwCICoZ8A3GawwlMAm/8i323aJECAQCCB8AHgZlU5BNj8A303KIUAAQILCfgRwMRh2/wn4luaAAECiwukeAJwm1G1pwA2/8W/87RPgACByQJpAsDNqUoIsPlPvuotT4AAAQJfqQLAbV6ZQ4CN33ccAQIECEQRSBcAbnDZQoCNP8rlrg4CBAgQuAukDAC34rOEAJv//VLzmQABAgQiCaQNADfEyCHAxh/pMlcLAQIECDwKpA4A92YiBQEb/30qPhMgQIBAZIESAeAOPDMI2PjvU/CZAAECBDIIlAoAv8F7hQEb/W9lfyZAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIpBH4LyObjn5tZHEVAAAAAElFTkSuQmCC
+          - True
+          - 0
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258863
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: 41c4c793-3d6f-44da-a24b-cfcd09c725c4
+        Seed: 1454314548
+        m_Operators:
+        - rid: 6416760143111258864
+        - rid: 6416760143111258865
+        - rid: 6416760143111258866
+        - rid: 6416760143111258867
+        - rid: 6416760143111258868
+        history:
+        - rid: 6416760143111258863
+        IsPbrMode: 1
+    - rid: 6416760143111258864
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258865
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - crack
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258866
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258867
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258868
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAaRklEQVR4Ae3d63LjyA0GUDu17//KGysp1XgkUeKlLwD6+I9nZIoNHNDbH2lP8vXlgwABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIrCXwvVa7/bv99+djzyrfPx97jnMMAQIECBDoIWATaqC6d9PfWkoY2JLxOgECBAj0EhAALshe3fgflxYEHkX8nQABAgR6CQgAJ2Vbb/6/yxAEfmv4MwECBAj0EBAADqr23Ph/lyIE/NbwZwIECBBoLSAAHBAdtfnfSxIC7hI+EyBAgEBrAQFgp+jozf9elhBwl/CZAAECBFoKCAA7NGdt/vfShIC7hM8ECBAg0EpAANghOTsAvCpRKHil4jUCBAgQ2CsgAHyQirj5vypZIHil4jUCBAgQ2BIQALZkfl7Psvk/tiAMPIr4OwECBAg8CqQMAEc35rMb4tF1HnFn/v1szzNrtjYBAgQIjBNIFQCubshHNsWra40b4fuVjvT8/ky+SoAAAQKVBFIEgNab8Z5NsfWasy+aPT3PrtH6BAgQIDBOIHQA6L0Jv9sUe689bsR/VnrX75+j/IkAAQIEVhAIGwBGbcBbm+Ko9WdcZFs9z6jFmgQIECAwRyBkABi9+T5uiKPXnzH6x55n1GBNAgQIEJgn8J95S79eecbmO2PN192Pe3XFnsfpWokAAQLxBUIFgJmb0sy1418mKiRAgACBagKhAsBs3NVCwGr9zr6+rE+AAIFIAmF+B8BmNO+y8PsA8+ytTIAAgVkCIZ4A2Pxnjd+6BAgQILCqQIgAsCp+lL4FsCiTUAcBAgTGCUwPADafccO2EgECBAgQuAtMDwD3QnyeKyCIzfW3OgECBEYLCACjxa1HgAABAgQCCEwNAO46A1wBSiBAgACBJQWmBoAlxTVNgAABAgQCCAgAAYagBAIECBAgMFpAABgtHng9P5IJPBylESBAoLHAtABgs2k8SacjQIAAAQIHBKYFgAM1OpQAAQIECBBoLCAANAZ1OgIECBAgkEFAAMgwJTUSIECAAIHGAgJAY1CnI0CAAAECGQSmBAC/AJjh0lAjAQIECFQWmBIAKoPqjQABAgQIZBAQADJMSY0ECBAgQKCxgADQGNTpCBAgQIBABgEBIMOU1EiAAAECBBoLCACNQZ2OAAECBAhkEBAAMkxJjQQIECBAoLHAP43P9/F0/gngR6KwBzzO7vvnI2yxCiNAgACBtwLDA8DbanwxlMDjhv9Y3KuvCwWPSv5OgACBmALD7+BebRoxaVR1VUAYuCro/QQIEOgn4HcA+tkuf2Zhb/lLAAABAoEFhj4BsCEEvhI6l+ZpQGdgpydAgMBBAU8ADoI5/JyA8HfOzbsIECDQS0AA6CXrvE8CQsATiRcIECAwTUAAmEa/5sJCwJpz1zUBAvEEBIB4MylfkRBQfsQaJEAggYAAkGBISiRAgAABAq0Fhv0rAHd9rUeX/3z+ZUD+GeqAAIG8Ap4A5J1d+sqFwvQj1AABAokFBIDEw1M6AQIECBA4KyAAnJXzviYCngI0YXQSAgQIHBYQAA6TeUNrASGgtajzESBA4LPAkADgP/CfB+EIAgQIECAwUmBIABjZkLUIECBAgACBzwICwGcjRwwQ8JRoALIlCBAg8EtAAPiF4Y8ECBAgQGAVge4BwJ3dKpeSPgkQIEAgk0D3AJAJQ61zBYTFuf5WJ0BgLQEBYK1565YAAQIECPxPQABwIYQS8BQg1DgUQ4BAYQEBoPBwtUaAAAECBLYEBIAtGa8TIECAAIHCAl0DgMe5ha8crREgQIBAaoGuASC1jOIJECBAgEBhAQGg8HCztubJUdbJqZsAgUwCAkCmaamVAAECBAg0EhAAGkE6DQECBAgQyCQgAGSalloJECBAgEAjAQGgEaTTECBAgACBTAICQKZpLVSrXwRcaNhaJUBgioAAMIXdogQIECBAYK6AADDX3+oECBAgQGCKgAAwhd2iBAgQIEBgroAAMNff6gQIECBAYIqAADCF3aIECBAgQGCuwHev5f0Wdy/Ztc77/fOxVse6JUCAwBgBTwDGOFuFAAECBAiEEhAAQo1DMQQIECBAYIyAADDG2SoECBAgQCCUgAAQahyKIUCAAAECYwQEgDHOViFAgAABAqEEBIBQ41AMAQIECBAYI9AlAPgngGOGZxUCBAgQIHBWoEsAOFuM9xEgQIAAAQJjBASAMc5WIUCAAAECoQQEgFDjUAwBAgQIEBgjIACMcbYKAQIECBAIJSAAhBqHYggQIECAwBgBAWCMs1UIECBAgEAoAQEg1DgUQ4AAAQIExggIAGOcrXJSwP+mxEk4byNAgMAHgS7/X+v+o/1B3ZdPCXz/fJx6ozcRIECAwJOAJwBPJF6IKiBYRp2MuggQyCjQ5Y7Kf6gzXgq5avY0INe8VEuAQDyB5gHA5h9vyFUrEgKqTlZfBAiMEPAjgBHK1iBAgAABAsEEBIBgA1HOfgFPm/ZbOZIAAQKPAgLAo4i/pxIQAlKNS7EECAQSEAACDUMp5wSEgHNu3kWAwNoCAsDa89c9AQIECCwqIAAsOvhqbXsKUG2i+iFAoLeAANBb2PkJECBAgEBAAQEg4FCURIAAAQIEegsIAL2FnX+YgB8DDKO2EAECBQQEgAJD1AIBAgQIEDgqIAAcFXM8AQIECBAoICAAFBiiFggQIECAwFEBAeComOMJECBAgEABAQGgwBC1QIAAAQIEjgoIAEfFHE+AAAECBAoICAAFhqgFAgQIECBwVEAAOCrmeAIECBAgUEBAACgwRC0QIECAAIGjAgLAUTHHEyBAgACBAgICQIEhaoEAAQIECBwVEACOijmeAAECBAgUEBAACgxRCwQIECBA4KiAAHBUzPFhBb5/PsIWpzACBAgEExAAgg1EOQQIECBAYISAADBC2RoECBAgQCCYgAAQbCDKIUCAAAECIwQEgBHK1ugu4Of/3YktQIBAMQEBoNhAtUOAAAECBPYICAB7lBxDgAABAgSKCQgAxQa6Yjse/684dT0TIHBVQAC4Kuj9UwVs/lP5LU6AQGIBASDx8JROgAABAgTOCggAZ+W8jwABAgQIJBYQABIPT+kECBAgQOCsgABwVs77pgv4+f/0ESiAAIHEAgJA4uEpnQABAgQInBUQAM7Ked9UAXf/U/ktToBAAQEBoMAQtUCAAAECBI4KCABHxRxPgAABAgQKCAgABYa4Wgse/682cf0SINBDQADooeqcBAgQIEAguIAAEHxAyiNAgAABAj0EBIAeqs5JgAABAgSCCwgAwQekvL8F/Pz/bw9/I0CAwFkBAeCsnPcRIECAAIHEAgJA4uEpnQABAgQInBUQAM7Ked9wAY//h5NbkACBwgICQOHhao0AAQIECGwJCABbMl4PJeDuP9Q4FEOAQAEBAaDAELVAgAABAgSOCggAR8UcT4AAAQIECggIAAWGWL0Fj/+rT1h/BAjMEBAAZqhbkwABAgQITBYQACYPwPLvBdz9v/fxVQIECJwVEADOynkfAQIECBBILCAAJB5e9dLd/VefsP4IEJgpIADM1Lc2AQIECBCYJCAATIK37HsBd//vfXyVAAECVwUEgKuC3k+AAAECBBIKCAAJh6ZkAgQIECBwVUAAuCro/c0FPP5vTuqEBAgQeBIQAJ5IvECAAAECBOoLCAD1Z5yqQ3f/qcalWAIEEgsIAImHp3QCBAgQIHBWQAA4K+d9zQXc/TcndUICBAhsCggAmzS+QIAAAQIE6goIAHVnm6ozd/+pxqVYAgQKCAgABYaoBQIECBAgcFRAADgq5vjmAu7+m5M6IQECBD4KCAAfiRxAgAABAgTqCQgA9WaaqiN3/6nGpVgCBAoJCACFhpmtFZt/tomplwCBSgICQKVpJurF5p9oWEolQKCkgABQcqyxm7L5x56P6ggQWEOgeQDwH/c1LhxdEiBAgEBugeYBIDeH6nsLCIi9hZ2fAAEC+wQEgH1OjiJAgAABAqUEBIBS44zdjLv/2PNRHQECawkIAGvNe1q3Nv9p9BYmQIDASwEB4CWLF1sK2PxbajoXAQIE2ggIAG0cnWVDwOa/AeNlAgQITBb4Z/L6li8qYOMvOlhtESBQRsATgDKjjNOIzT/OLFRCgACBLYEuAcAGsMXtdQIECBAgEEOgSwCI0ZoqZggIfzPUrUmAAIHjAgLAcTPvIECAAAEC6QUEgPQj1AABAgQIEDguIAAcN/OODQGP/zdgvEyAAIGAAgJAwKEoiQABAgQI9BYQAHoLL3J+d/+LDFqbBAiUERAAyoxSIwQIECBAYL+AALDfypEbAu7+N2C8TIAAgcACAkDg4SiNAAECBAj0EhAAeskucl53/4sMWpsECJQTEADKjVRDBAgQIEDgs4AA8NnIERsC7v43YLxMgACBBAICQIIhKZEAAQIECLQWEABaiy5yPnf/iwxamwQIlBUQAMqOVmMECBAgQGBbQADYtvGVDQF3/xswXiZAgEAiAQEg0bCUSoAAAQIEWgkIAK0kFzmPu/9FBq1NAgTKCwgA5UesQQIECBAg8CwgADybeGVDwN3/BoyXCRAgkFBAAEg4NCUTIECAAIGrAgLAVcFF3u/uf5FBa5MAgWUEBIBlRq1RAgQIECDwR0AA+GPhTxsC7v43YLxMgACBxAICQOLhKZ0AAQIECJwVEADOyi3yPnf/iwxamwQILCcgACw3cg0TIECAAIGvLwHAVUCAAAECBBYUEAAWHPrelj3+3yvlOAIECOQTEADyzUzFBAgQIEDgsoAAcJmw5gnc/decq64IECBwFxAA7hI+EyBAgACBhQQEgIWGvbdVd/97pRxHgACBvAICQN7Zdanc5t+F1UkJECAQTkAACDcSBREgQIAAgf4CAkB/4zQruPtPMyqFEiBA4LKAAHCZsMYJbP415qgLAgQI7BUQAPZKFT7O5l94uFojQIDAhkC3AGBT2RD3MgECBAgQCCDQLQAE6E0JOwQEtR1IDiFAgEBBAQGg4FD3tmTz3yvlOAIECNQTEADqzXRXRzb/XUwOIkCAQFmB796d/fvz0XsN5z8mYPM/5uVoAgQIVBTwBKDiVPVEgAABAgQ+CHR/AnBb31OAD1MY+GV3/wOxLUWAAIHAAp4ABB5O69Js/q1FnY8AAQJ5BYYEABtP3gtE5QQIECBQU2BIAKhJl6srISzXvFRLgACB3gJDfgfg3oTfBbhLjP1s8x/rbTUCBAhkEBgaAG4gQsDYy8LmP9bbagQIEMgiMDwA3GCEgDGXh81/jLNVCBAgkFFgSgC4QQkBfS8Xm39fX2cnQIBAdoFpAeAGJwT0uXxs/n1cnZUAAQKVBKb+KwAbVaVLSS8ECBAgkElg6hOAO5QnAXeJ65+FquuGzkCAAIEVBKY+AVgBeGSPNv+R2tYiQIBAboEQTwBuhJ4CXLuQbP7X/LybAAECqwl4AlBg4jb/AkPUAgECBAYLCACDwVsvZ/NvLep8BAgQWENAAEg8Z5t/4uEpnQABApMFwvwOwM3B7wHsvxps/vutHEmAAAECzwKeADybhH/F5h9+RAokQIBAeAEBIPyI/i7Q5v+3h78RIECAwDmBUD8CuLXgxwDbg7T5b9v4CgECBAgcE/AE4JjXtKNt/tPoLUyAAIGSAgJAgrHa/BMMSYkECBBIJiAABB+YzT/4gJRHgACBpALhfgfg5uj3AP5/Ndn8k35XKZsAAQIJBDwBCDokm3/QwSiLAAECRQRCPgG42a78FMDmX+S7SxsECBAILOAJQLDh2PyDDUQ5BAgQKCoQ9gnAzXu1pwA2/6LfZdoiQIBAQAFPAIIMxeYfZBDKIECAwCICoZ8A3GawwlMAm/8i323aJECAQCCB8AHgZlU5BNj8A303KIUAAQILCfgRwMRh2/wn4luaAAECiwukeAJwm1G1pwA2/8W/87RPgACByQJpAsDNqUoIsPlPvuotT4AAAQJfqQLAbV6ZQ4CN33ccAQIECEQRSBcAbnDZQoCNP8rlrg4CBAgQuAukDAC34rOEAJv//VLzmQABAgQiCaQNADfEyCHAxh/pMlcLAQIECDwKpA4A92YiBQEb/30qPhMgQIBAZIESAeAOPDMI2PjvU/CZAAECBDIIlAoAv8F7hQEb/W9lfyZAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIpBH4LyObjn5tZHEVAAAAAElFTkSuQmCC
+          - True
+          - 0
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258869
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: eddbdcd7-8ad2-4438-8c43-02e667b42a0d
+        Seed: 3247197009
+        m_Operators:
+        - rid: 6416760143111258870
+        - rid: 6416760143111258871
+        - rid: 6416760143111258872
+        - rid: 6416760143111258873
+        - rid: 6416760143111258874
+        history:
+        - rid: 6416760143111258869
+        IsPbrMode: 0
+    - rid: 6416760143111258870
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258871
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - crack
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258872
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258873
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258874
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAaRklEQVR4Ae3d63LjyA0GUDu17//KGysp1XgkUeKlLwD6+I9nZIoNHNDbH2lP8vXlgwABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIrCXwvVa7/bv99+djzyrfPx97jnMMAQIECBDoIWATaqC6d9PfWkoY2JLxOgECBAj0EhAALshe3fgflxYEHkX8nQABAgR6CQgAJ2Vbb/6/yxAEfmv4MwECBAj0EBAADqr23Ph/lyIE/NbwZwIECBBoLSAAHBAdtfnfSxIC7hI+EyBAgEBrAQFgp+jozf9elhBwl/CZAAECBFoKCAA7NGdt/vfShIC7hM8ECBAg0EpAANghOTsAvCpRKHil4jUCBAgQ2CsgAHyQirj5vypZIHil4jUCBAgQ2BIQALZkfl7Psvk/tiAMPIr4OwECBAg8CqQMAEc35rMb4tF1HnFn/v1szzNrtjYBAgQIjBNIFQCubshHNsWra40b4fuVjvT8/ky+SoAAAQKVBFIEgNab8Z5NsfWasy+aPT3PrtH6BAgQIDBOIHQA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O5QnAXeJ65+FquuGzkCAAIEVBKY+AVgBeGSPNv+R2tYiQIBAboEQTwBuhJ4CXLuQbP7X/LybAAECqwl4AlBg4jb/AkPUAgECBAYLCACDwVsvZ/NvLep8BAgQWENAAEg8Z5t/4uEpnQABApMFwvwOwM3B7wHsvxps/vutHEmAAAECzwKeADybhH/F5h9+RAokQIBAeAEBIPyI/i7Q5v+3h78RIECAwDmBUD8CuLXgxwDbg7T5b9v4CgECBAgcE/AE4JjXtKNt/tPoLUyAAIGSAgJAgrHa/BMMSYkECBBIJiAABB+YzT/4gJRHgACBpALhfgfg5uj3AP5/Ndn8k35XKZsAAQIJBDwBCDokm3/QwSiLAAECRQRCPgG42a78FMDmX+S7SxsECBAILOAJQLDh2PyDDUQ5BAgQKCoQ9gnAzXu1pwA2/6LfZdoiQIBAQAFPAIIMxeYfZBDKIECAwCICoZ8A3GawwlMAm/8i323aJECAQCCB8AHgZlU5BNj8A303KIUAAQILCfgRwMRh2/wn4luaAAECiwukeAJwm1G1pwA2/8W/87RPgACByQJpAsDNqUoIsPlPvuotT4AAAQJfqQLAbV6ZQ4CN33ccAQIECEQRSBcAbnDZQoCNP8rlrg4CBAgQuAukDAC34rOEAJv//VLzmQABAgQiCaQNADfEyCHAxh/pMlcLAQIECDwKpA4A92YiBQEb/30qPhMgQIBAZIESAeAOPDMI2PjvU/CZAAECBDIIlAoAv8F7hQEb/W9lfyZAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIpBH4LyObjn5tZHEVAAAAAElFTkSuQmCC
+          - True
+          - 0
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258875
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: f8a861f8-8340-4e99-94f0-90ad47b311b0
+        Seed: 855763807
+        m_Operators:
+        - rid: 6416760143111258876
+        - rid: 6416760143111258877
+        - rid: 6416760143111258878
+        - rid: 6416760143111258879
+        - rid: 6416760143111258880
+        history:
+        - rid: 6416760143111258875
+        IsPbrMode: 0
+    - rid: 6416760143111258876
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258877
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - crack
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258878
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258879
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258880
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAaRklEQVR4Ae3d63LjyA0GUDu17//KGysp1XgkUeKlLwD6+I9nZIoNHNDbH2lP8vXlgwABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIrCXwvVa7/bv99+djzyrfPx97jnMMAQIECBDoIWATaqC6d9PfWkoY2JLxOgECBAj0EhAALshe3fgflxYEHkX8nQABAgR6CQgAJ2Vbb/6/yxAEfmv4MwECBAj0EBAADqr23Ph/lyIE/NbwZwIECBBoLSAAHBAdtfnfSxIC7hI+EyBAgEBrAQFgp+jozf9elhBwl/CZAAECBFoKCAA7NGdt/vfShIC7hM8ECBAg0EpAANghOTsAvCpRKHil4jUCBAgQ2CsgAHyQirj5vypZIHil4jUCBAgQ2BIQALZkfl7Psvk/tiAMPIr4OwECBAg8CqQMAEc35rMb4tF1HnFn/v1szzNrtjYBAgQIjBNIFQCubshHNsWra40b4fuVjvT8/ky+SoAAAQKVBFIEgNab8Z5NsfWasy+aPT3PrtH6BAgQIDBOIHQA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O5QnAXeJ65+FquuGzkCAAIEVBKY+AVgBeGSPNv+R2tYiQIBAboEQTwBuhJ4CXLuQbP7X/LybAAECqwl4AlBg4jb/AkPUAgECBAYLCACDwVsvZ/NvLep8BAgQWENAAEg8Z5t/4uEpnQABApMFwvwOwM3B7wHsvxps/vutHEmAAAECzwKeADybhH/F5h9+RAokQIBAeAEBIPyI/i7Q5v+3h78RIECAwDmBUD8CuLXgxwDbg7T5b9v4CgECBAgcE/AE4JjXtKNt/tPoLUyAAIGSAgJAgrHa/BMMSYkECBBIJiAABB+YzT/4gJRHgACBpALhfgfg5uj3AP5/Ndn8k35XKZsAAQIJBDwBCDokm3/QwSiLAAECRQRCPgG42a78FMDmX+S7SxsECBAILOAJQLDh2PyDDUQ5BAgQKCoQ9gnAzXu1pwA2/6LfZdoiQIBAQAFPAIIMxeYfZBDKIECAwCICoZ8A3GawwlMAm/8i323aJECAQCCB8AHgZlU5BNj8A303KIUAAQILCfgRwMRh2/wn4luaAAECiwukeAJwm1G1pwA2/8W/87RPgACByQJpAsDNqUoIsPlPvuotT4AAAQJfqQLAbV6ZQ4CN33ccAQIECEQRSBcAbnDZQoCNP8rlrg4CBAgQuAukDAC34rOEAJv//VLzmQABAgQiCaQNADfEyCHAxh/pMlcLAQIECDwKpA4A92YiBQEb/30qPhMgQIBAZIESAeAOPDMI2PjvU/CZAAECBDIIlAoAv8F7hQEb/W9lfyZAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIpBH4LyObjn5tZHEVAAAAAElFTkSuQmCC
+          - True
+          - 0
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258881
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        Guid: faf38767-bdfd-4eef-bf03-df68ad26b108
+        Seed: 2368779149
+        m_Operators:
+        - rid: 6416760143111258882
+        - rid: 6416760143111258883
+        - rid: 6416760143111258884
+        - rid: 6416760143111258885
+        - rid: 6416760143111258886
+        history:
+        - rid: 6416760143111258881
+        IsPbrMode: 0
+    - rid: 6416760143111258882
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          version: 0.0.1
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258883
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          version: 0.0.2
+          settings:
+          - crack
+          - 
+          enabled: 1
+          assembly: 
+    - rid: 6416760143111258884
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258885
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          enabled: 0
+          assembly: 
+    - rid: 6416760143111258886
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          version: 0.0.1
+          settings:
+          - iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAaRklEQVR4Ae3d63LjyA0GUDu17//KGysp1XgkUeKlLwD6+I9nZIoNHNDbH2lP8vXlgwABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIrCXwvVa7/bv99+djzyrfPx97jnMMAQIECBDoIWATaqC6d9PfWkoY2JLxOgECBAj0EhAALshe3fgflxYEHkX8nQABAgR6CQgAJ2Vbb/6/yxAEfmv4MwECBAj0EBAADqr23Ph/lyIE/NbwZwIECBBoLSAAHBAdtfnfSxIC7hI+EyBAgEBrAQFgp+jozf9elhBwl/CZAAECBFoKCAA7NGdt/vfShIC7hM8ECBAg0EpAANghOTsAvCpRKHil4jUCBAgQ2CsgAHyQirj5vypZIHil4jUCBAgQ2BIQALZkfl7Psvk/tiAMPIr4OwECBAg8CqQMAEc35rMb4tF1HnFn/v1szzNrtjYBAgQIjBNIFQCubshHNsWra40b4fuVjvT8/ky+SoAAAQKVBFIEgNab8Z5NsfWasy+aPT3PrtH6BAgQIDBOIHQA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O5QnAXeJ65+FquuGzkCAAIEVBKY+AVgBeGSPNv+R2tYiQIBAboEQTwBuhJ4CXLuQbP7X/LybAAECqwl4AlBg4jb/AkPUAgECBAYLCACDwVsvZ/NvLep8BAgQWENAAEg8Z5t/4uEpnQABApMFwvwOwM3B7wHsvxps/vutHEmAAAECzwKeADybhH/F5h9+RAokQIBAeAEBIPyI/i7Q5v+3h78RIECAwDmBUD8CuLXgxwDbg7T5b9v4CgECBAgcE/AE4JjXtKNt/tPoLUyAAIGSAgJAgrHa/BMMSYkECBBIJiAABB+YzT/4gJRHgACBpALhfgfg5uj3AP5/Ndn8k35XKZsAAQIJBDwBCDokm3/QwSiLAAECRQRCPgG42a78FMDmX+S7SxsECBAILOAJQLDh2PyDDUQ5BAgQKCoQ9gnAzXu1pwA2/6LfZdoiQIBAQAFPAIIMxeYfZBDKIECAwCICoZ8A3GawwlMAm/8i323aJECAQCCB8AHgZlU5BNj8A303KIUAAQILCfgRwMRh2/wn4luaAAECiwukeAJwm1G1pwA2/8W/87RPgACByQJpAsDNqUoIsPlPvuotT4AAAQJfqQLAbV6ZQ4CN33ccAQIECEQRSBcAbnDZQoCNP8rlrg4CBAgQuAukDAC34rOEAJv//VLzmQABAgQiCaQNADfEyCHAxh/pMlcLAQIECDwKpA4A92YiBQEb/30qPhMgQIBAZIESAeAOPDMI2PjvU/CZAAECBDIIlAoAv8F7hQEb/W9lfyZAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIpBH4LyObjn5tZHEVAAAAAElFTkSuQmCC
+          - True
+          - 0
+          enabled: 1
+          assembly: 
