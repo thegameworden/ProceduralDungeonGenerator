@@ -46,6 +46,7 @@ public class Door : MonoBehaviour
             if (IsRotatingDoor)
             {
                 float dot = Vector3.Dot(Forward, (UserPosition - transform.position).normalized);
+                //float dot = Vector3.Dot(Forward, (UserPosition - new Vector3(0,0,0)).normalized);
                 Debug.Log($"Dot: {dot.ToString("N3")}");
                 AnimationCoroutine = StartCoroutine(DoRotationOpen(dot));
             }
@@ -63,11 +64,11 @@ public class Door : MonoBehaviour
 
         if (ForwardAmount >= ForwardDirection)
         {
-            endRotation = Quaternion.Euler(new Vector3(0, StartRotation.y + RotationAmount, 0));
+            endRotation = startRotation * Quaternion.Euler(0, RotationAmount, 0); // Rotate around its own Y-axis
         }
         else
         {
-            endRotation = Quaternion.Euler(new Vector3(0, StartRotation.y - RotationAmount, 0));
+            endRotation = startRotation * Quaternion.Euler(0, -RotationAmount, 0); // Rotate around its own Y-axis
         }
 
         IsOpen = true;

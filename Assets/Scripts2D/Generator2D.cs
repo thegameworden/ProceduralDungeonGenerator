@@ -1,6 +1,4 @@
-﻿//MY VERSION
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
@@ -55,7 +53,8 @@ public class Generator2D : MonoBehaviour {
     HashSet<Prim.Edge> selectedEdges;
 
 
-    //My Ideas???
+ 
+
     List<Vector2Int> hallwayPieces = new();
     [SerializeField]
     GameObject wallPrefab;
@@ -76,6 +75,11 @@ public class Generator2D : MonoBehaviour {
     }
    
     void Generate() {
+        if(seed == 0)
+        {
+            Random newSeed = new Random();
+            seed = newSeed.Next(Int32.MaxValue);
+        }
         if (loopRate <=0)
         {
             loopRate = 0.125;
@@ -436,8 +440,6 @@ public class Generator2D : MonoBehaviour {
     }
     bool isDoorway(Vector2Int checkDoor, Vector2Int checkHall)
     {
-        Debug.Log(grid[checkDoor]);
-
         if (grid[checkDoor] != CellType.Door || checkHall.x < 0 || checkHall.x >= size.x || checkHall.y < 0 || checkHall.y >= size.y || grid[checkHall] != CellType.Hallway) return false;
 
         return true;

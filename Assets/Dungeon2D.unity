@@ -153,10 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0763b230d22fd334bbc9441aed267b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 1
+  seed: 184390547
   scale: 4
   Player: {fileID: 2145856555}
-  size: {x: 25, y: 25}
+  size: {x: 20, y: 20}
   roomCount: 15
   roomMaxSize: {x: 3, y: 3}
   floorPrefab: {fileID: 7098722004315399662, guid: 8ed269eb0fc43b147a165ab5ef854a4e,
@@ -170,7 +170,7 @@ MonoBehaviour:
   hallwayWallPrefab: {fileID: 7098722004315399662, guid: f5072c4f123ff44499c2e27210327b73,
     type: 3}
   startingRoom: {fileID: 0}
-  loopRate: 0
+  loopRate: 1
 --- !u!4 &203877985
 Transform:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 1007502326}
   - component: {fileID: 1007502327}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: FlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,7 +308,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.96161336, b: 0.5424528, a: 1}
   m_Intensity: 2.5
-  m_Range: 7.5
+  m_Range: 12.5
   m_SpotAngle: 60
   m_InnerSpotAngle: 3
   m_CookieSize: 10
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseText: {fileID: 1739925200}
   Camera: {fileID: 1196332781}
-  MaxUseDistance: 10
+  MaxUseDistance: 2
   UseLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -814,8 +814,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 2
+  m_fontSizeBase: 2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

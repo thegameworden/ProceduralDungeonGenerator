@@ -33,8 +33,6 @@ public class PlayerActions : MonoBehaviour
 
     private void Update()
     {
-        Physics.Raycast(Camera.position, Camera.forward, out RaycastHit test, MaxUseDistance, UseLayers);
-        //Component[] components = hit.collider.gameObject.GetComponents<Component>();
         if (Physics.Raycast(Camera.position, Camera.forward, out RaycastHit hit, MaxUseDistance, UseLayers)
             && hit.collider.TryGetComponent<Door>(out Door door))
         {
@@ -52,12 +50,6 @@ public class PlayerActions : MonoBehaviour
         }
         else
         {
-            Component[] components = test.collider.gameObject.GetComponents<Component>();
-            foreach (Component component in components)
-            {
-                Debug.Log("Found component: " + component.GetType());
-            }
-
             UseText.gameObject.SetActive(false);
         }
     }
