@@ -457,25 +457,33 @@ public class Generator2D : MonoBehaviour {
         // Instantiate the door with correct orientation
         GameObject go = Instantiate(doorPrefab, new Vector3(location.x, 0, location.y) * scale,Quaternion.identity);
         go.GetComponent<Transform>().localScale = new Vector3(1, 1, 1) * scale;
-        go.name = "Door";
+        go.name = "Doorway";
 
         var center = go.GetComponent<Renderer>().bounds.center;
 
         if (direction.x > 0)
         {
-            go.transform.RotateAround(center, Vector3.up, -90);
-            go.transform.Translate(new Vector3(0.5f, 0, -0.5f) * scale);
+            go.transform.RotateAround(center, Vector3.up, 180);
+            go.transform.Translate(new Vector3(-1, 0, -1) * scale);
         }
         if (direction.x < 0)
         {
-            go.transform.RotateAround(center, Vector3.up, -90);
-            go.transform.Translate(new Vector3(0.5f,0,0.5f)*scale);
+            go.transform.RotateAround(center, Vector3.up, 0);
+            go.transform.Translate(new Vector3(0,0,0)*scale);
         }
         if (direction.y > 0)
-           go.transform.Translate(new Vector3(0,0,1)*scale);
-        if(direction.y<0)
-            go.transform.RotateAround(center, Vector3.up, 0);
+        {
+            go.transform.Translate(new Vector3(-1, 0, 0) * scale);
+            go.transform.RotateAround(center, Vector3.up, 90);
+        }
+        if (direction.y < 0)
+        {
+            
+            go.transform.Translate(new Vector3(0, 0, -1) * scale);
+            go.transform.RotateAround(center, Vector3.up, -90);
 
+
+        }
         return go;
 
     }
@@ -496,14 +504,19 @@ public class Generator2D : MonoBehaviour {
         }
         if (direction.x < 0)
         {
-            go.transform.RotateAround(center, Vector3.up, -90);
-            go.transform.Translate(new Vector3(0, 0, 0) * scale);
+            go.transform.RotateAround(center, Vector3.up, 90);
+            go.transform.Translate(new Vector3(-1, 0, 0) * scale);
         }
         if (direction.y > 0)
-            go.transform.Translate(new Vector3(0, 0, 1) * scale);
+        {
+            go.transform.Translate(new Vector3(-1, 0, -1) * scale);
+            go.transform.RotateAround(center, Vector3.up, 180);
+        }
         if (direction.y < 0)
+        {
             go.transform.RotateAround(center, Vector3.up, 0);
-
+            go.transform.Translate(new Vector3(0, 0, 0) * scale);
+        }
         return go;
 
     }
