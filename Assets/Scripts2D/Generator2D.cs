@@ -1,6 +1,4 @@
-﻿//MY VERSION
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
@@ -55,7 +53,8 @@ public class Generator2D : MonoBehaviour {
     HashSet<Prim.Edge> selectedEdges;
 
 
-    //My Ideas???
+ 
+
     List<Vector2Int> hallwayPieces = new();
     [SerializeField]
     GameObject wallPrefab;
@@ -76,6 +75,11 @@ public class Generator2D : MonoBehaviour {
     }
    
     void Generate() {
+        if(seed == 0)
+        {
+            Random newSeed = new Random();
+            seed = newSeed.Next(Int32.MaxValue);
+        }
         if (loopRate <=0)
         {
             loopRate = 0.125;
@@ -436,8 +440,6 @@ public class Generator2D : MonoBehaviour {
     }
     bool isDoorway(Vector2Int checkDoor, Vector2Int checkHall)
     {
-        Debug.Log(grid[checkDoor]);
-
         if (grid[checkDoor] != CellType.Door || checkHall.x < 0 || checkHall.x >= size.x || checkHall.y < 0 || checkHall.y >= size.y || grid[checkHall] != CellType.Hallway) return false;
 
         return true;
@@ -457,25 +459,33 @@ public class Generator2D : MonoBehaviour {
         // Instantiate the door with correct orientation
         GameObject go = Instantiate(doorPrefab, new Vector3(location.x, 0, location.y) * scale,Quaternion.identity);
         go.GetComponent<Transform>().localScale = new Vector3(1, 1, 1) * scale;
-        go.name = "Door";
+        go.name = "Doorway";
 
         var center = go.GetComponent<Renderer>().bounds.center;
 
         if (direction.x > 0)
         {
-            go.transform.RotateAround(center, Vector3.up, -90);
-            go.transform.Translate(new Vector3(0.5f, 0, -0.5f) * scale);
+            go.transform.RotateAround(center, Vector3.up, 180);
+            go.transform.Translate(new Vector3(-1, 0, -1) * scale);
         }
         if (direction.x < 0)
         {
-            go.transform.RotateAround(center, Vector3.up, -90);
-            go.transform.Translate(new Vector3(0.5f,0,0.5f)*scale);
+            go.transform.RotateAround(center, Vector3.up, 0);
+            go.transform.Translate(new Vector3(0,0,0)*scale);
         }
         if (direction.y > 0)
-           go.transform.Translate(new Vector3(0,0,1)*scale);
-        if(direction.y<0)
-            go.transform.RotateAround(center, Vector3.up, 0);
+        {
+            go.transform.Translate(new Vector3(-1, 0, 0) * scale);
+            go.transform.RotateAround(center, Vector3.up, 90);
+        }
+        if (direction.y < 0)
+        {
+            
+            go.transform.Translate(new Vector3(0, 0, -1) * scale);
+            go.transform.RotateAround(center, Vector3.up, -90);
 
+
+        }
         return go;
 
     }
@@ -496,14 +506,19 @@ public class Generator2D : MonoBehaviour {
         }
         if (direction.x < 0)
         {
-            go.transform.RotateAround(center, Vector3.up, -90);
-            go.transform.Translate(new Vector3(0, 0, 0) * scale);
+            go.transform.RotateAround(center, Vector3.up, 90);
+            go.transform.Translate(new Vector3(-1, 0, 0) * scale);
         }
         if (direction.y > 0)
-            go.transform.Translate(new Vector3(0, 0, 1) * scale);
+        {
+            go.transform.Translate(new Vector3(-1, 0, -1) * scale);
+            go.transform.RotateAround(center, Vector3.up, 180);
+        }
         if (direction.y < 0)
+        {
             go.transform.RotateAround(center, Vector3.up, 0);
-
+            go.transform.Translate(new Vector3(0, 0, 0) * scale);
+        }
         return go;
 
     }

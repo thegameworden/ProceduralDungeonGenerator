@@ -22,7 +22,7 @@ public class SC_DoorScript : MonoBehaviour
     float defaultRotationAngle;
     float currentRotationAngle;
     float openTime = 0;
-
+    [SerializeField]
     private Collider collider;
 
     void Start()
@@ -41,6 +41,10 @@ public class SC_DoorScript : MonoBehaviour
         {
             openTime += Time.deltaTime * openSpeedMultiplier * openSpeedCurve.Evaluate(openTime);
         }
+        else
+        {
+            collider.enabled = true;
+        }
  
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Mathf.LerpAngle(currentRotationAngle, defaultRotationAngle + (open ? doorOpenAngle : 0), openTime), transform.localEulerAngles.z);
 
@@ -49,6 +53,7 @@ public class SC_DoorScript : MonoBehaviour
             open = !open;
             currentRotationAngle = transform.localEulerAngles.y;
             openTime = 0;
+            collider.enabled = false;
 
         }
 
