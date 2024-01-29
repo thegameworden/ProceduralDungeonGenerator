@@ -78,7 +78,7 @@ public class Generator2D : MonoBehaviour {
         if(seed == 0)
         {
             Random newSeed = new Random();
-            seed = newSeed.Next(Int32.MaxValue);
+            seed = newSeed.Next(Int32.MinValue, Int32.MaxValue);
         }
         if (loopRate <=0)
         {

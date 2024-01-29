@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0763b230d22fd334bbc9441aed267b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 184390547
+  seed: 0
   scale: 4
   Player: {fileID: 2145856555}
   size: {x: 20, y: 20}
@@ -170,7 +170,7 @@ MonoBehaviour:
   hallwayWallPrefab: {fileID: 7098722004315399662, guid: f5072c4f123ff44499c2e27210327b73,
     type: 3}
   startingRoom: {fileID: 0}
-  loopRate: 1
+  loopRate: 0
 --- !u!4 &203877985
 Transform:
   m_ObjectHideFlags: 0
