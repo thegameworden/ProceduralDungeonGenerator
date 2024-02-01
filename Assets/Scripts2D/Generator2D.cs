@@ -71,33 +71,34 @@ public class Generator2D : MonoBehaviour {
 
 
     void Start() {
-        Generate();
-    }
-   
-    void Generate() {
-        if(seed == 0)
+        if (seed == 0)
         {
             Random newSeed = new Random();
             seed = newSeed.Next(Int32.MinValue, Int32.MaxValue);
         }
-        if (loopRate <=0)
+        if (loopRate <= 0)
         {
             loopRate = 0.125;
         }
         UnityEngine.Random.InitState(seed);
         grid = new Grid2D<CellType>(size, Vector2Int.zero);
         rooms = new List<Room>();
+        Generate();
+    }
+   
+    void Generate() {
+
 
         Generator();
         Instantiator();
 
-        Debug.Log(Player.transform.position);
+        //Debug.Log(Player.transform.position);
         var startPos = startingRoom.transform.position;
         //startPos.y += scale;
         startPos.x += scale/2;
         startPos.z += scale/2;
         Player.transform.position = startPos;
-        Debug.Log(Player.transform.position);
+       // Debug.Log(Player.transform.position);
     }
     void Generator()
     {
@@ -109,7 +110,6 @@ public class Generator2D : MonoBehaviour {
 
     void Instantiator()
     {
-        //InstantiateHallways();
         InstantiateRooms();
         InstantiateHallways();
 
@@ -148,10 +148,6 @@ public class Generator2D : MonoBehaviour {
                 foreach (var pos in newRoom.bounds.allPositionsWithin) {
                     grid[pos] = CellType.Room;
                 }
-            }
-            else
-            {
-                i--;
             }
         }
     }
