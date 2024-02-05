@@ -14,7 +14,8 @@ public class Generator3D : MonoBehaviour
         None,
         Room,
         Hallway,
-        Stairs,
+        StairwayEntrance,
+        StairwaySpace,
         Door
     }
 
@@ -62,7 +63,7 @@ public class Generator3D : MonoBehaviour
 
 
     List<Vector3Int> hallwayPieces = new();
-    List<Vector3Int> stairwayPieces = new();
+    List<(Vector3 direction, Vector3Int location)> stairwayPieces = new();
 
     [SerializeField]
     GameObject wallPrefab;
@@ -236,7 +237,7 @@ public class Generator3D : MonoBehaviour
                     //flat hallway
                     pathCost.cost = Vector3Int.Distance(b.Position, endPos);    //heuristic
 
-                    if (grid[b.Position] == CellType.Stairs)
+                    if (grid[b.Position] == CellType.StairwayEntrance)
                     {
                         return pathCost;
                     }
@@ -302,6 +303,27 @@ public class Generator3D : MonoBehaviour
                         var prev = path[i - 1];
 
                         var delta = current - prev;
+                        Debug.Log($"{grid[prev]} -> {grid[current]} at {prev}->{current}");
+                        if (grid[current] == CellType.Hallway && grid[prev] == CellType.Room)
+                        {
+                            grid[prev] = CellType.Door;
+
+                        }
+                        else if (grid[current] == CellType.Room && grid[prev] == CellType.Hallway)
+                        {
+                            grid[current] = CellType.Door; //PlaceDoor(current, prev); was original thought
+
+                        }else 
+                        if (grid[current] == CellType.StairwaySpace && grid[prev] == CellType.Room)
+                        {
+                            grid[prev] = CellType.Door;
+
+                        }
+                        else if (grid[current] == CellType.Room && grid[prev] == CellType.StairwaySpace)
+                        {
+                            grid[current] = CellType.Door; //PlaceDoor(current, prev); was original thought
+
+                        }
 
                         if (delta.y != 0)
                         {
@@ -310,10 +332,10 @@ public class Generator3D : MonoBehaviour
                             Vector3Int verticalOffset = new Vector3Int(0, delta.y, 0);
                             Vector3Int horizontalOffset = new Vector3Int(xDir, 0, zDir);
 
-                            grid[prev + horizontalOffset] = CellType.Stairs;
-                            grid[prev + horizontalOffset * 2] = CellType.Stairs;
-                            grid[prev + verticalOffset + horizontalOffset] = CellType.Stairs;
-                            grid[prev + verticalOffset + horizontalOffset * 2] = CellType.Stairs;
+                            grid[prev + horizontalOffset] = CellType.StairwayEntrance;
+                            grid[prev + horizontalOffset * 2] = CellType.StairwaySpace;
+                            grid[prev + verticalOffset + horizontalOffset] = CellType.StairwaySpace;
+                            grid[prev + verticalOffset + horizontalOffset * 2] = CellType.StairwayEntrance;
 
                             /*
                             PlaceStairs(prev + horizontalOffset);
@@ -322,10 +344,8 @@ public class Generator3D : MonoBehaviour
                             PlaceStairs(prev + verticalOffset + horizontalOffset * 2);
                             */
                             //testing???
-                            stairwayPieces.Add(prev + horizontalOffset);
-                            stairwayPieces.Add(prev + horizontalOffset * 2);
-                            stairwayPieces.Add(prev + verticalOffset + horizontalOffset);
-                            stairwayPieces.Add(prev + verticalOffset + horizontalOffset * 2);
+                                stairwayPieces.Add((verticalOffset+horizontalOffset, prev));
+
                         }
 
                         Debug.DrawLine((prev + new Vector3(0.5f, 0.5f, 0.5f))*scale, (current + new Vector3(0.5f, 0.5f, 0.5f))*scale, Color.blue, 100, false);
@@ -366,9 +386,10 @@ public class Generator3D : MonoBehaviour
                     foreach (var neighbor in GetNeighbors(hallwayPiece))
                     {
 
-                        if (neighbor.x < 0 || neighbor.x >= size.x || neighbor.y < 0 || neighbor.y >= size.y || neighbor.z < 0 || neighbor.z >= size.z || grid[neighbor] == CellType.None)
+                        if (neighbor.x < 0 || neighbor.x >= size.x || neighbor.z < 0 || neighbor.z >= size.z || neighbor.z < 0 || neighbor.z >= size.z || grid[neighbor] == CellType.None )
                         {
-                            //InstantiateHallwayWall(hallwayPiece, neighbor);
+                            GameObject goWall = InstantiateHallwayWall(hallwayPiece, neighbor);
+                            goWall.transform.parent = Parent.transform;
                             continue;
                         }
                         if (visited.Contains(neighbor) || grid[neighbor] != CellType.Hallway)
@@ -388,10 +409,10 @@ public class Generator3D : MonoBehaviour
         return new List<Vector3Int>{
         new Vector3Int(piece.x+1, piece.y,piece.z),
         new Vector3Int(piece.x-1, piece.y,piece.z),
-        new Vector3Int(piece.x, piece.y+1,piece.z),
-        new Vector3Int(piece.x, piece.y-1,piece.z)
-       // new Vector3Int(piece.x, piece.y,piece.z+1),
-      //  new Vector3Int(piece.x, piece.y,piece.z-1)
+      //  new Vector3Int(piece.x, piece.y+1,piece.z),
+        //new Vector3Int(piece.x, piece.y-1,piece.z)
+        new Vector3Int(piece.x, piece.y,piece.z+1),
+        new Vector3Int(piece.x, piece.y,piece.z-1)
         };
 
     }
@@ -412,7 +433,7 @@ public class Generator3D : MonoBehaviour
         var spot = location;
         GameObject parentObject = new GameObject("Room");
         parentObject.transform.position = new Vector3(spot.x, spot.y, spot.z) * scale;
-        for (int z = 0; z < size.y; z++)
+        for (int z = 0; z < size.z; z++)
         {
             for (int x = 0; x < size.x; x++)
             {
@@ -424,7 +445,7 @@ public class Generator3D : MonoBehaviour
                 floor.transform.SetParent(parentObject.transform);
             }
         }
-        //InstantiateRoomWalls(location, size, parentObject);
+        InstantiateRoomWalls(location, size, parentObject);
 
 
         return parentObject;
@@ -510,8 +531,10 @@ public class Generator3D : MonoBehaviour
     }
     bool isDoorway(Vector3Int checkDoor, Vector3Int checkHall)
     {
-        if (grid[checkDoor] != CellType.Door || checkHall.x < 0 || checkHall.x >= size.x || checkHall.y < 0 || checkHall.y >= size.y || grid[checkHall] != CellType.Hallway) return false;
+        Debug.Log("checking if doorways");
+        if (grid[checkDoor] != CellType.Door || checkHall.x < 0 || checkHall.x >= size.x || checkHall.z < 0 || checkHall.z >= size.z || grid[checkHall] != CellType.Hallway) return false;
 
+        Debug.Log("doorway");
         return true;
     }
 
@@ -543,12 +566,12 @@ public class Generator3D : MonoBehaviour
             go.transform.RotateAround(center, Vector3.up, 0);
             go.transform.Translate(new Vector3(0, 0, 0) * scale);
         }
-        if (direction.y > 0)
+        if (direction.z > 0)
         {
             go.transform.Translate(new Vector3(-1, 0, 0) * scale);
             go.transform.RotateAround(center, Vector3.up, 90);
         }
-        if (direction.y < 0)
+        if (direction.z < 0)
         {
 
             go.transform.Translate(new Vector3(0, 0, -1) * scale);
@@ -574,18 +597,18 @@ public class Generator3D : MonoBehaviour
         {
             go.transform.RotateAround(center, Vector3.up, -90);
             go.transform.Translate(new Vector3(0, 0, -1) * scale);
-        }
+        }else
         if (direction.x < 0)
         {
             go.transform.RotateAround(center, Vector3.up, 90);
             go.transform.Translate(new Vector3(-1, 0, 0) * scale);
-        }
-        if (direction.y > 0)
+        }else
+        if (direction.z > 0)
         {
             go.transform.Translate(new Vector3(-1, 0, -1) * scale);
             go.transform.RotateAround(center, Vector3.up, 180);
-        }
-        if (direction.y < 0)
+        }else
+        if (direction.z < 0)
         {
             go.transform.RotateAround(center, Vector3.up, 0);
             go.transform.Translate(new Vector3(0, 0, 0) * scale);
@@ -597,15 +620,76 @@ public class Generator3D : MonoBehaviour
 
     void InstantiateStairs()
     {
-        foreach (var stair in stairwayPieces)
+        foreach (var piece in stairwayPieces)
         {
-            InstantiateStairPiece(stair);
+            InstantiateStairPiece(piece.direction, piece.location);
         }
     }
-    GameObject InstantiateStairPiece(Vector3Int location)
+    GameObject InstantiateStairPiece(Vector3 direction, Vector3Int location)
     {
+        Debug.Log($"Direction: ({direction.x}, {direction.y}, {direction.z}) \n\tLocation: ({location.x}, {location.y}, {location.z})");
+
+        // Instantiate the door with correct orientation
         GameObject go = Instantiate(stairwayPrefab, new Vector3(location.x, location.y, location.z) * scale, Quaternion.identity);
         go.GetComponent<Transform>().localScale = new Vector3(1, 1, 1) * scale;
+        go.name = "Stairway";
+
+        var center = go.GetComponent<Renderer>().bounds.center;
+        if (direction.y > 0)
+        {
+            if (direction.x > 0) //done
+            {
+                go.transform.Rotate(0, 90, 0);
+                go.transform.Translate(new Vector3(-1, 0, 1) * scale);
+            }
+            if (direction.x < 0) 
+            {
+                go.transform.Rotate(0, -90, 0);
+                go.transform.Translate(new Vector3(0, 0, 0) * scale);
+            }
+            if (direction.z > 0) //done
+            {
+                go.transform.Translate(new Vector3(0, 0, 1) * scale);
+                go.transform.RotateAround(center, Vector3.up, 0);
+               
+            }
+            if (direction.z < 0)// done 
+            {
+
+                go.transform.Translate(new Vector3(1, 0, 0) * scale);
+                go.transform.Rotate(0, 180, 0);
+
+
+            }
+        }else{
+            Debug.Log("Going downstairs?");
+            if (direction.x > 0)
+            {
+                go.transform.Translate(new Vector3(3,-1,0) * scale);
+                go.transform.Rotate(0, -90, 0);
+
+            }
+            if (direction.x < 0)// done
+            {
+                go.transform.Rotate(0, 90, 0);
+                go.transform.Translate(new Vector3(-1, -1, -2) * scale);
+            
+
+            }
+            if (direction.z > 0)//done
+            {
+                go.transform.Translate(new Vector3(1, -1, 3) * scale);
+                go.transform.Rotate(0,180, 0);
+            }
+            if (direction.z < 0) 
+            {
+
+                go.transform.Translate(new Vector3(0, -1, -2) * scale);
+                go.transform.Rotate(0, 0, 0);
+                Debug.Log("testing at " + new Vector3(location.x, location.y, location.z) * scale);
+
+            }
+        }
         return go;
     }
 }

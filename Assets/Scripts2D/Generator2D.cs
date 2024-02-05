@@ -240,8 +240,8 @@ public class Generator2D : MonoBehaviour {
                         var delta = current - prev;
 
 
-                    if (grid[current] == CellType.Hallway && grid[prev] == CellType.Room) 
-                    {
+                        if (grid[current] == CellType.Hallway && grid[prev] == CellType.Room) 
+                        {
                             grid[prev] = CellType.Door;
 
                         }

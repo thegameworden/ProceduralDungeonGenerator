@@ -325,11 +325,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2adc24e688e8841887873ee6b3e08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 0
+  seed: -737792428
   scale: 4
   Player: {fileID: 1300713083}
-  size: {x: 30, y: 6, z: 30}
-  roomCount: 15
+  size: {x: 20, y: 6, z: 20}
+  roomCount: 10
   roomMaxSize: {x: 3, y: 1, z: 3}
   floorPrefab: {fileID: 7098722004315399662, guid: 8ed269eb0fc43b147a165ab5ef854a4e,
     type: 3}
