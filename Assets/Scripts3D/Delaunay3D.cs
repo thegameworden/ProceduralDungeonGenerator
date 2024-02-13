@@ -231,10 +231,12 @@ public class Delaunay3D {
             return U.GetHashCode() ^ V.GetHashCode();
         }
 
-        public static bool AlmostEqual(Edge left, Edge right) {
-            return (Delaunay3D.AlmostEqual(left.U, right.U) || Delaunay3D.AlmostEqual(left.V, right.U))
-                && (Delaunay3D.AlmostEqual(left.U, right.V) || Delaunay3D.AlmostEqual(left.V, right.U));
+        public static bool AlmostEqual(Edge left, Edge right)
+        {
+            return (Delaunay3D.AlmostEqual(left.U, right.U) && Delaunay3D.AlmostEqual(left.V, right.V))
+                || (Delaunay3D.AlmostEqual(left.U, right.V) && Delaunay3D.AlmostEqual(left.V, right.U));
         }
+
     }
 
     static bool AlmostEqual(Vertex left, Vertex right) {

@@ -7,6 +7,13 @@ using System.Linq;
 using System;
 
 
+/*
+Good Testing Seeds:
+-737792428
+
+
+*/
+
 public class Generator3D : MonoBehaviour
 {
     enum CellType
@@ -64,6 +71,7 @@ public class Generator3D : MonoBehaviour
 
     List<Vector3Int> hallwayPieces = new();
     List<(Vector3 direction, Vector3Int location)> stairwayPieces = new();
+    List<(Vector3Int doorLocation, Vector3Int hallwayLocation)> doors = new();
 
     [SerializeField]
     GameObject wallPrefab;
@@ -109,7 +117,7 @@ public class Generator3D : MonoBehaviour
         var startPos = startingRoom.transform.position;
         startPos.x += scale / 2;
         startPos.z += scale / 2;
-        startPos.y += scale / 2;
+        startPos.y += scale / 4;
         Player.transform.position = startPos;
     }
     void Generator()
@@ -122,9 +130,12 @@ public class Generator3D : MonoBehaviour
     }
     void Instantiator()
     {
-        InstantiateRooms();
         InstantiateHallways();
         InstantiateStairs();
+
+        InstantiateRooms();
+
+
 
     }
     void GenerateRooms()
@@ -194,6 +205,7 @@ public class Generator3D : MonoBehaviour
 
         foreach (var edge in delaunay.Edges)
         {
+            Debug.Log($"{edge.U.Position*scale} goes to {edge.V.Position*scale}");
             edges.Add(new Prim.Edge(edge.U, edge.V));
         }
 
@@ -205,7 +217,7 @@ public class Generator3D : MonoBehaviour
 
         foreach (var edge in remainingEdges)
         {
-            if (UnityEngine.Random.value < loopRate)
+            if (UnityEngine.Random.value < 0)
             {
                 selectedEdges.Add(edge);
             }
@@ -307,23 +319,32 @@ public class Generator3D : MonoBehaviour
                         if (grid[current] == CellType.Hallway && grid[prev] == CellType.Room)
                         {
                             grid[prev] = CellType.Door;
+                            doors.Add((prev, current));
 
                         }
                         else if (grid[current] == CellType.Room && grid[prev] == CellType.Hallway)
                         {
                             grid[current] = CellType.Door; //PlaceDoor(current, prev); was original thought
+                            doors.Add((current, prev));
 
-                        }else 
-                        if (grid[current] == CellType.StairwaySpace && grid[prev] == CellType.Room)
+                        }
+                        
+                        
+                        else 
+                        if (grid[current] == CellType.StairwayEntrance && grid[prev] == CellType.Room)
                         {
                             grid[prev] = CellType.Door;
+                            doors.Add((prev, current));
 
                         }
-                        else if (grid[current] == CellType.Room && grid[prev] == CellType.StairwaySpace)
+                        else if (grid[current] == CellType.Room && grid[prev] == CellType.StairwayEntrance)
                         {
                             grid[current] = CellType.Door; //PlaceDoor(current, prev); was original thought
+                            doors.Add((current, prev));
 
                         }
+                        
+                        
 
                         if (delta.y != 0)
                         {
@@ -336,16 +357,8 @@ public class Generator3D : MonoBehaviour
                             grid[prev + horizontalOffset * 2] = CellType.StairwaySpace;
                             grid[prev + verticalOffset + horizontalOffset] = CellType.StairwaySpace;
                             grid[prev + verticalOffset + horizontalOffset * 2] = CellType.StairwayEntrance;
-
-                            /*
-                            PlaceStairs(prev + horizontalOffset);
-                            PlaceStairs(prev + horizontalOffset * 2);
-                            PlaceStairs(prev + verticalOffset + horizontalOffset);
-                            PlaceStairs(prev + verticalOffset + horizontalOffset * 2);
-                            */
-                            //testing???
-                                stairwayPieces.Add((verticalOffset+horizontalOffset, prev));
-
+                            stairwayPieces.Add((verticalOffset+horizontalOffset, prev));
+                            //InstantiateStairPiece(verticalOffset+horizontalOffset, prev);
                         }
 
                         Debug.DrawLine((prev + new Vector3(0.5f, 0.5f, 0.5f))*scale, (current + new Vector3(0.5f, 0.5f, 0.5f))*scale, Color.blue, 100, false);
@@ -356,9 +369,8 @@ public class Generator3D : MonoBehaviour
                 {
                     if (grid[pos] == CellType.Hallway)
                     {
-
-
                         hallwayPieces.Add(pos);
+                        //InstantiateHallwayPiece(pos);
                     }
                 }
             }
@@ -386,7 +398,7 @@ public class Generator3D : MonoBehaviour
                     foreach (var neighbor in GetNeighbors(hallwayPiece))
                     {
 
-                        if (neighbor.x < 0 || neighbor.x >= size.x || neighbor.z < 0 || neighbor.z >= size.z || neighbor.z < 0 || neighbor.z >= size.z || grid[neighbor] == CellType.None )
+                        if (neighbor.x < 0 || neighbor.x >= size.x || neighbor.z < 0 || neighbor.z >= size.z || neighbor.z < 0 || neighbor.z >= size.z || grid[neighbor] == CellType.None)
                         {
                             GameObject goWall = InstantiateHallwayWall(hallwayPiece, neighbor);
                             goWall.transform.parent = Parent.transform;
@@ -409,8 +421,6 @@ public class Generator3D : MonoBehaviour
         return new List<Vector3Int>{
         new Vector3Int(piece.x+1, piece.y,piece.z),
         new Vector3Int(piece.x-1, piece.y,piece.z),
-      //  new Vector3Int(piece.x, piece.y+1,piece.z),
-        //new Vector3Int(piece.x, piece.y-1,piece.z)
         new Vector3Int(piece.x, piece.y,piece.z+1),
         new Vector3Int(piece.x, piece.y,piece.z-1)
         };
@@ -458,6 +468,7 @@ public class Generator3D : MonoBehaviour
         {
             Vector3Int checkDoorOne = new Vector3Int(location.x, location.y, location.z + z);
             Vector3Int checkHallOne = new Vector3Int(location.x - 1, location.y, location.z + z);
+           
             if (isDoorway(checkDoorOne, checkHallOne))
             {
                 InstantiateDoor(checkDoorOne, checkHallOne).transform.SetParent(parentObject.transform);
@@ -475,7 +486,7 @@ public class Generator3D : MonoBehaviour
             }
 
             Vector3Int checkDoorTwo = new Vector3Int(location.x + size.x - 1, location.y, location.z + z);
-            Vector3Int checkHallTwo = new Vector3Int(location.x + size.x, location.z + z);
+            Vector3Int checkHallTwo = new Vector3Int(location.x + size.x,location.y, location.z + z);
             if (isDoorway(checkDoorTwo, checkHallTwo))
             {
                 InstantiateDoor(checkDoorTwo, checkHallTwo).transform.SetParent(parentObject.transform);
@@ -531,10 +542,9 @@ public class Generator3D : MonoBehaviour
     }
     bool isDoorway(Vector3Int checkDoor, Vector3Int checkHall)
     {
-        Debug.Log("checking if doorways");
-        if (grid[checkDoor] != CellType.Door || checkHall.x < 0 || checkHall.x >= size.x || checkHall.z < 0 || checkHall.z >= size.z || grid[checkHall] != CellType.Hallway) return false;
-
-        Debug.Log("doorway");
+        Debug.Log($"Doorway check: {checkDoor} -> {checkHall} {grid[checkDoor]} - > {grid[checkHall]}   RESULTS: {grid[checkDoor] != CellType.Door || checkHall.x < 0 || checkHall.x >= size.x || checkHall.z < 0 || checkHall.z >= size.z || (grid[checkHall] != CellType.Hallway && grid[checkHall] != CellType.StairwayEntrance) || Vector3.Distance(checkDoor, checkHall) + 1 > scale}");
+        if (grid[checkDoor] != CellType.Door || checkHall.x < 0 || checkHall.x >= size.x || checkHall.z < 0 || checkHall.z >= size.z || (grid[checkHall] != CellType.Hallway && grid[checkHall] != CellType.StairwayEntrance) || Vector3.Distance(checkDoor, checkHall)+1>scale) return false;
+        //return grid[checkDoor] == CellType.Door;
         return true;
     }
 
@@ -544,7 +554,6 @@ public class Generator3D : MonoBehaviour
         go.GetComponent<Transform>().localScale = new Vector3(1, 1, 1) * scale;
         return go;
     }
-
 
     GameObject InstantiateDoor(Vector3Int location, Vector3Int hallway)
     {

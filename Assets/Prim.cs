@@ -11,9 +11,22 @@ public static class Prim {
             Distance = Vector3.Distance(u.Position, v.Position);
         }
 
-        public static bool operator ==(Edge left, Edge right) {
-            return (left.U == right.U && left.V == right.V)
-                || (left.U == right.V && left.V == right.U);
+        public static bool operator ==(Edge left, Edge right)
+        {
+            // If both are null, or both are same instance, return true.
+            if (ReferenceEquals(left, right))
+            {
+                return true;
+            }
+
+            // If one is null, but not both, return false.
+            if (ReferenceEquals(left, null) || ReferenceEquals(right, null))
+            {
+                return false;
+            }
+
+            // Now that we've handled the null checks, proceed with the comparison.
+            return (left.U == right.U && left.V == right.V) || (left.U == right.V && left.V == right.U);
         }
 
         public static bool operator !=(Edge left, Edge right) {
@@ -37,45 +50,75 @@ public static class Prim {
         }
     }
 
-    public static List<Edge> MinimumSpanningTree(List<Edge> edges, Vertex start) {
+
+    public static List<Edge> MinimumSpanningTree(List<Edge> edges, Vertex start)
+    {
         HashSet<Vertex> openSet = new HashSet<Vertex>();
         HashSet<Vertex> closedSet = new HashSet<Vertex>();
 
-        foreach (var edge in edges) {
+        // Initialize the open set with all vertices.
+        foreach (var edge in edges)
+        {
             openSet.Add(edge.U);
             openSet.Add(edge.V);
         }
 
+        // Start with the specified start vertex.
         closedSet.Add(start);
+        openSet.Remove(start);
 
         List<Edge> results = new List<Edge>();
 
-        while (openSet.Count > 0) {
-            bool chosen = false;
+        while (openSet.Count > 0)
+        {
             Edge chosenEdge = null;
             float minWeight = float.PositiveInfinity;
 
-            foreach (var edge in edges) {
-                int closedVertices = 0;
-                if (!closedSet.Contains(edge.U)) closedVertices++;
-                if (!closedSet.Contains(edge.V)) closedVertices++;
-                if (closedVertices != 1) continue;
+            foreach (var edge in edges)
+            {
+                bool isUClosed = closedSet.Contains(edge.U);
+                bool isVClosed = closedSet.Contains(edge.V);
 
-                if (edge.Distance < minWeight) {
-                    chosenEdge = edge;
-                    chosen = true;
-                    minWeight = edge.Distance;
+                // Ensure one vertex is in the closed set and the other is in the open set.
+                if (isUClosed ^ isVClosed)
+                {
+                    if (edge.Distance < minWeight)
+                    {
+                        chosenEdge = edge;
+                        minWeight = edge.Distance;
+                    }
                 }
             }
 
-            if (!chosen) break;
+            if (chosenEdge == null)
+            {
+                Debug.LogError("MST construction failed: Graph might be disconnected.");
+                break;
+            }
+
+            // Add the chosen edge to the MST.
             results.Add(chosenEdge);
-            openSet.Remove(chosenEdge.U);
-            openSet.Remove(chosenEdge.V);
-            closedSet.Add(chosenEdge.U);
-            closedSet.Add(chosenEdge.V);
+
+            // Move the newly connected vertex from open to closed set.
+            if (closedSet.Contains(chosenEdge.U))
+            {
+                closedSet.Add(chosenEdge.V);
+                openSet.Remove(chosenEdge.V);
+            }
+            else
+            {
+                closedSet.Add(chosenEdge.U);
+                openSet.Remove(chosenEdge.U);
+            }
+        }
+
+        if (openSet.Count > 0)
+        {
+            Debug.LogWarning("MST completed but not all vertices are connected. Open set is not empty.");
         }
 
         return results;
     }
+
+
 }

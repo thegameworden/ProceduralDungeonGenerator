@@ -344,7 +344,7 @@ MonoBehaviour:
   stairwayPrefab: {fileID: 7527303633803829761, guid: 9dbd295a700f50746a9046b33e2a84b1,
     type: 3}
   startingRoom: {fileID: 0}
-  loopRate: 0
+  loopRate: 1
 --- !u!4 &1180316802
 Transform:
   m_ObjectHideFlags: 0
