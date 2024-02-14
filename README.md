@@ -1,10 +1,11 @@
 ## Procedural-Dungeon-Map-Generator
-Working on a Procedural Dungeon Generator, that will eventually be turned into a game in the future. As of now, working on using the 2D design.
+Working on a Procedural Dungeon Generator, that will eventually be turned into a game in the future.
 
 Changes and add-ons (Now/Future): 
-* Seeds to be able to recreate the same environments while maintaining randomness
-* Group hallways and rooms together 
-* Research possible ways of optimizing memory use Adding personal desgin to art assets
+* Seeds to be able to recreate the same environments while maintaining randomness 
+* Adding personal desgin to art assets
+* Adding in spawn location
+* Develop assets for hallways, doors, rooms, and walls that are properly oriented for a user to be able traverse a generated dungeon
 
 ## Screenshots
 
