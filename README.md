@@ -9,7 +9,12 @@ Changes and add-ons (Now/Future):
 ## Screenshots
 
 ![A* pathing](https://vazgriz.com/wp-content/uploads/2019/11/dungeon5.gif)
-![Map Generation 3d](Screenshot 2024-02-14 135623.png)
+[Screenshot 2024-02-14 135623.png](https://github.com/thegameworden/ProceduralDungeonGenerator/blob/main/Screenshot%202024-02-14%20135623.png)
+[Screenshot 2024-02-14 135647.png](https://github.com/thegameworden/ProceduralDungeonGenerator/blob/main/Screenshot%202024-02-14%20135647.png)
+[Screenshot 2024-02-14 135754.png](https://github.com/thegameworden/ProceduralDungeonGenerator/blob/main/Screenshot%202024-02-14%20135754.png)
+[Screenshot 2024-02-14 135809.png](https://github.com/thegameworden/ProceduralDungeonGenerator/blob/main/Screenshot%202024-02-14%20135809.png)
+[Screenshot 2024-02-14 135822.png](https://github.com/thegameworden/ProceduralDungeonGenerator/blob/main/Screenshot%202024-02-14%20135822.png)
+
 ## License
 
 The priority queue is by BlueRaja. The license can be found in `Assets/BlueRaja`.
