@@ -77,6 +77,7 @@ public class DungeonPathfinder3D {
     }
 
     public List<Vector3Int> FindPath(Vector3Int start, Vector3Int end, Func<Node, Node, PathCost> costFunction) {
+        Debug.Log($"Finding Path from {start} to {end}");
         ResetNodes();
         queue.Clear();
         closed.Clear();
@@ -92,6 +93,8 @@ public class DungeonPathfinder3D {
             closed.Add(node);
 
             if (node.Position == end) {
+                    Debug.Log("Find Path ret...?" + start + " " + end);
+                
                 return ReconstructPath(node);
             }
 
@@ -126,11 +129,13 @@ public class DungeonPathfinder3D {
                 if (newCost < neighbor.Cost) {
                     neighbor.Previous = node;
                     neighbor.Cost = newCost;
-
-                    if (queue.TryGetPriority(node, out float existingPriority)) {
-                        queue.UpdatePriority(node, newCost);
-                    } else {
-                        queue.Enqueue(neighbor, neighbor.Cost);
+                    if (!queue.Contains(neighbor))
+                    {
+                        queue.Enqueue(neighbor, newCost);
+                    }
+                    else
+                    {
+                        queue.UpdatePriority(neighbor, newCost);
                     }
 
                     neighbor.PreviousSet.Clear();
@@ -151,7 +156,7 @@ public class DungeonPathfinder3D {
                 }
             }
         }
-
+        Debug.LogError($"ERROR with PathFinder {start} to {end}");
         return null;
     }
 

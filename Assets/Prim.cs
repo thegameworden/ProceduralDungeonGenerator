@@ -57,8 +57,10 @@ public static class Prim {
         HashSet<Vertex> closedSet = new HashSet<Vertex>();
 
         // Initialize the open set with all vertices.
+        Debug.Log("All Edges");
         foreach (var edge in edges)
         {
+            Debug.Log($"edge from {edge.U.Position} to {edge.V.Position}");
             openSet.Add(edge.U);
             openSet.Add(edge.V);
         }
@@ -86,8 +88,12 @@ public static class Prim {
                     {
                         chosenEdge = edge;
                         minWeight = edge.Distance;
+                       
                     }
+                   
+                   
                 }
+                
             }
 
             if (chosenEdge == null)
@@ -117,6 +123,11 @@ public static class Prim {
             Debug.LogWarning("MST completed but not all vertices are connected. Open set is not empty.");
         }
 
+        Debug.Log("Final Edges");
+        foreach(var edge in results)
+        {
+            Debug.Log($"Finale edge {edge.U.Position} to {edge.V.Position}");
+        }
         return results;
     }
 
